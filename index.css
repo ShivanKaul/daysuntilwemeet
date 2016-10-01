@@ -1,0 +1,26 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vr;
+    align-items: center
+}
+
+.cmp {
+    height: 40vh;
+    width: 100vh;
+}
+
+#days {
+    font-size: 10vmin;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#heart {
+    text-align: center;
+}
+
+img {
+    width: 30vmin
+}
