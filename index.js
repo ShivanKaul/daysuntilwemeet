@@ -16,7 +16,7 @@ function generateMessage(daysLeft) {
     if (daysLeft < 5) {
         message = "Time to paaaack, only " + daysLeft + " days lefttt!"
     }
-    if (daysLeft == 0) {
+    if (daysLeft == 0 || daysLeft == -1) {
         message = "OMG HI."
     }
     else if (daysLeft < 0) {
@@ -32,7 +32,7 @@ window.onload = function () {
     // Get UNIX timestamp, convert to days since epoch
     let targetDate = Math.floor((new Date(2016, 9, 29)).getTime() / 86400000)
     let today = Math.floor((new Date()).getTime() / 86400000)
-    let daysLeft = targetDate - today - 1 // don't count today
+    let daysLeft = targetDate - today // don't count today
 
     let message = generateMessage(daysLeft)
 
