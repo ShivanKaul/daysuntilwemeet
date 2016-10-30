@@ -16,7 +16,7 @@ function generateMessage(daysLeft) {
     if (daysLeft < 5) {
         message = "Time to paaaack, only " + daysLeft + " days lefttt!"
     }
-    if (daysLeft == 0 || daysLeft == -1) {
+    if (daysLeft == 0) {
         message = "OMG HI."
     }
     else if (daysLeft < 0) {
