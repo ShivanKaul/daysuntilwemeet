@@ -37,7 +37,11 @@ window.onload = function () {
     let message = generateMessage(daysLeft)
 
     // set title of document
-    document.title = daysLeft + ' days left!'
+    if (daysLeft > 0) {
+        document.title = daysLeft + ' days left!'
+    } else {
+        document.title = 'I miss you.'
+    }
     // set inner html ugh
     document.getElementById("days").innerHTML = message
 }
