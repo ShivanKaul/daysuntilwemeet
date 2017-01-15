@@ -30,7 +30,7 @@ function generateMessage(daysLeft) {
 window.onload = function () {
     // Calculate days left
     // Get UNIX timestamp, convert to days since epoch
-    let targetDate = Math.floor((new Date(2016, 11, 03)).getTime() / 86400000)
+    let targetDate = Math.floor((new Date(2017, 02, 16)).getTime() / 86400000)
     let today = Math.floor((new Date()).getTime() / 86400000)
     let daysLeft = targetDate - today // don't count today
 
