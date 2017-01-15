@@ -1,49 +1,50 @@
-function generateMessage(daysLeft) {
-    let message = "Only " + daysLeft + " days left!"
+'use strict';
 
-    if (daysLeft % 3 == 0) {
-        message = "I'll see your face in " + daysLeft + " days!"
+function generateMessage(daysLeft) {
+    let message = "Only " + daysLeft + " days left!";
+
+    if (daysLeft % 3 === 0) {
+        message = "I'll see your face in " + daysLeft + " days!";
     }
-    if (daysLeft % 4 == 0) {
-        message = "PupperTime in " + daysLeft + " days!"
+    if (daysLeft % 4 === 0) {
+        message = "PupperTime in " + daysLeft + " days!";
     }
-    if (daysLeft % 5 == 0) {
-        message = "I get to annoy you in " + daysLeft + " days <3!"
+    if (daysLeft % 5 === 0) {
+        message = "I get to annoy you in " + daysLeft + " days <3!";
     }
     if (daysLeft < 10) {
-        message = "Soooo closeee only " + daysLeft + " days lefttt!"
+        message = "Soooo closeee only " + daysLeft + " days lefttt!";
     }
     if (daysLeft < 5) {
-        message = "Time to paaaack, only " + daysLeft + " days lefttt!"
+        message = "Time to paaaack, only " + daysLeft + " days lefttt!";
     }
-    if (daysLeft == 0) {
-        message = "OMG HI."
+    if (daysLeft === 0) {
+        message = "OMG HI.";
     }
     else if (daysLeft < 0) {
-        message = "I miss you."
+        message = "I miss you.";
     }
-    
-    return message
+
+    return message;
 }
 
 
 window.onload = function () {
     // Calculate days left
     // Get UNIX timestamp, convert to days since epoch
-    let targetDate = Math.floor((new Date(2017, 2, 16)).getTime() / 86400000)
-    console.log("target date: ", targetDate)
-    let today = Math.floor((new Date()).getTime() / 86400000)
-    console.log("today date: ", today)
-    let daysLeft = targetDate - today
+    // REMEMBER: Date takes in month to be 0 indexed! January is 0.
+    let targetDate = (new Date(2017, 1, 16)).getTime();
+    let today = (new Date()).setHours(0, 0, 0, 0);
+    let daysLeft = Math.floor((targetDate - today) / 86400000);
 
-    let message = generateMessage(daysLeft)
+    let message = generateMessage(daysLeft);
 
     // set title of document
     if (daysLeft > 0) {
-        document.title = daysLeft + ' days left!'
+        document.title = daysLeft + ' days left!';
     } else {
-        document.title = 'I miss you.'
+        document.title = 'I miss you.';
     }
     // set inner html ugh
-    document.getElementById("days").innerHTML = message
+    document.getElementById("days").innerHTML = message;
 }
