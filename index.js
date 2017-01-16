@@ -1,5 +1,8 @@
 'use strict';
 
+// REMEMBER: Date takes in month to be 0 indexed! January is 0.
+let targetDate = (new Date(2017, 1, 16)).getTime();
+
 function generateMessage(daysLeft) {
     let message = "Only " + daysLeft + " days left!";
 
@@ -32,8 +35,6 @@ function generateMessage(daysLeft) {
 window.onload = function () {
     // Calculate days left
     // Get UNIX timestamp, convert to days since epoch
-    // REMEMBER: Date takes in month to be 0 indexed! January is 0.
-    let targetDate = (new Date(2017, 1, 16)).getTime();
     let today = (new Date()).setHours(0, 0, 0, 0);
     let daysLeft = Math.floor((targetDate - today) / 86400000);
 
