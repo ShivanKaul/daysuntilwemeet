@@ -1,5 +1,7 @@
 # Days Until We Meet
-⏰ 💑 Simple online day countdown 
+⏰ 💑 : Simple online day countdown 
+
+...
 
 Made this in React (the code on `master` branch) before realizing that websites need to be hosted. The code on the `gh-pages` branch is far simpler and allows me to use GitHub to [host the website](shivankaul.com/daysuntilwemeet/). 
 
