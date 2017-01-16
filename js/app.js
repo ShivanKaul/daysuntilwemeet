@@ -4,6 +4,7 @@ import moment from 'moment'
 
 moment().format()
 
+// Configurable things
 var targetDate = moment([2016, 9, 29]) // 0 -> Jan
 var heartLink = "https://giphy.com/gifs/excited-corgi-xT77XKxcPqxIZqUrwk"
 
