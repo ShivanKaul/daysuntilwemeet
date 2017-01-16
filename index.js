@@ -2,6 +2,7 @@
 
 // REMEMBER: Date takes in month to be 0 indexed! January is 0.
 let targetDate = (new Date(2017, 1, 16)).getTime();
+let heartLink="https://giphy.com/gifs/excited-corgi-xT77XKxcPqxIZqUrwk"
 
 function generateMessage(daysLeft) {
     let message = "Only " + daysLeft + " days left!";
@@ -46,6 +47,8 @@ window.onload = function () {
     } else {
         document.title = 'I miss you.';
     }
-    // set inner html ugh
+    // Set inner html ugh
     document.getElementById("days").innerHTML = message;
+    // Set link
+    document.getElementById("heartLink").href = heartLink;
 }
