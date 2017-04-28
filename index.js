@@ -2,7 +2,7 @@
 
 // Configurable things
 // REMEMBER: Date takes in month to be 0 indexed! January is 0.
-let targetDate = (new Date(2017, 1, 16)).getTime();
+let targetDate = (new Date(2017, 4, 26)).getTime();
 let heartLink="https://giphy.com/gifs/excited-corgi-xT77XKxcPqxIZqUrwk"
 
 function generateMessage(daysLeft) {
