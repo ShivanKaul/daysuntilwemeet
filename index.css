@@ -1,18 +1,18 @@
 #container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vr;
-    align-items: center
+    align-items: center;
+    min-height: 100%;
 }
 
 .cmp {
-    height: 40vh;
-    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #days {
-    font-size: 10vmin;
+    font-size: 12vmin;
     text-align: center;
     font-family: 'Lato';
 }
