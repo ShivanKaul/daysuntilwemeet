@@ -1,9 +1,11 @@
 'use strict';
 
 // Configurable things
+// CAUTION CAUTION CAUTION CAUTION
 // REMEMBER: Date takes in month to be 0 indexed! January is 0.
-let targetDate = (new Date(2017, 4, 26)).getTime();
-let heartLink="https://giphy.com/gifs/excited-corgi-xT77XKxcPqxIZqUrwk"
+// CAUTION CAUTION CAUTION CAUTION
+let targetDate = (new Date(2017, 7, 31)).getTime();
+let heartLink="https://giphy.com/gifs/happy-bear-applause-muHlnG1WU9YfS"
 
 function generateMessage(daysLeft) {
     let message = "Only " + daysLeft + " days left!";
