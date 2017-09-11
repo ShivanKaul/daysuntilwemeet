@@ -4,7 +4,7 @@
 // CAUTION CAUTION CAUTION CAUTION
 // REMEMBER: Date takes in month to be 0 indexed! January is 0.
 // CAUTION CAUTION CAUTION CAUTION
-let targetDate = (new Date(2017, 7, 31)).getTime();
+let targetDate = (new Date(2017, 8, 21)).getTime();
 let heartLink="https://giphy.com/gifs/happy-bear-applause-muHlnG1WU9YfS"
 
 function generateMessage(daysLeft) {
